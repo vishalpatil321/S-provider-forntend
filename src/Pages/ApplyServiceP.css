@@ -1,0 +1,19 @@
+.form-btn{
+    width: 200px !important;
+    margin-top: 30px;
+}
+.input{
+    border: 2px solid green;
+}
+.input::placeholder{
+    color: rgb(99, 196, 99);
+}
+.submit-button{
+    background-color: transparent;
+    border: 2px solid green;
+    color: green;
+}
+.submit-button:hover{
+    background-color: green;
+    color:white;
+}

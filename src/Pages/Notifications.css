@@ -1,0 +1,15 @@
+.notification{
+    display: flex;
+    justify-content:flex-start;
+    color: rgb(76, 198, 76);
+    align-items: center;
+}
+@media only screen and (min-width:180px) and (max-width:567px){
+  .notification-container{
+    width: 100%;
+    height: 70vh;
+  }
+  .heading{
+    display: none;
+  }
+}
