@@ -48,10 +48,7 @@ const ServicePRequests = () => {
     },[]);
 
     const columns = [
-        {
-            title:'Id',
-            dataIndex:'_id'
-        },
+      
         {
             title:'Name',
             dataIndex:'name',
