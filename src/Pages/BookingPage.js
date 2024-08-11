@@ -16,7 +16,7 @@ const BookingPage = () => {
     const params = useParams();
     const getUserData = async () => {
         try {
-            const res = await axios.post('http://localhost:4000/api/serviceP/getServiceProviderById',
+            const res = await axios.post('https://s-provider-backend.onrender.com/api/serviceP/getServiceProviderById',
                 { servicePId: params.servicePId },
                 {
                     headers: {
