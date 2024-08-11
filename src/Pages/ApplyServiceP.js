@@ -24,6 +24,7 @@ const ApplyServiceP = () => {
             if(res.data.success){
                 navigate('/');
                 message.success(res.data.message);
+                window.location.reload();
             }
             else{
                 message.error(res.data.message);
