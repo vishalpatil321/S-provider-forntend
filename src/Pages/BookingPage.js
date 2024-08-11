@@ -25,7 +25,7 @@ const BookingPage = () => {
                 });
             if (res.data.success) {
                 setData(res.data.data);
-                console.log(res.data.data);
+                window.location.reload();
             };
         } catch (error) {
             console.log(error);
