@@ -47,7 +47,7 @@ const Requests = () => {
             dataIndex:'email',
             render:(text,record) => (
                 <span>
-                    {record.userInfo[0].email}  
+                    {record.servicePInfo[0].email}  
                 </span>
             )
         },
