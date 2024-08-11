@@ -17,7 +17,7 @@ const Profile = () =>{
 
     const getServicePInfo = async() => {
        try {
-         const res = await axios.post('http://localhost:4000/api/serviceP/getServicePInfo',
+         const res = await axios.post('https://s-provider-backend.onrender.com/api/serviceP/getServicePInfo',
             {userId:params.id},
             {
                 headers:{
