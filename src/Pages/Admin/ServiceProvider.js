@@ -7,7 +7,7 @@ const ServiceProviders = () => {
   const [data , setData] = useState([]);
   const getServiceProviders = async() => {
     try {
-      const serviceProviders = await axios.get('http://localhost:4000/api/admin/getServiceProviders',{
+      const serviceProviders = await axios.get('https://s-provider-backend.onrender.com/api/admin/getServiceProviders',{
         headers:{
           Authorization:`Bearer ${localStorage.getItem('token1')}`,
         }
