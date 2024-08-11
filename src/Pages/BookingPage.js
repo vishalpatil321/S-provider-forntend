@@ -54,7 +54,7 @@ const BookingPage = () => {
          dispatch(hideLoading());
          if(res.data.success){
             message.success(res.data.message);
-             window.location.reload();
+            
          }
          
        } catch (error) {
