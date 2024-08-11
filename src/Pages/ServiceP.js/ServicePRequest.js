@@ -10,7 +10,7 @@ const ServicePRequests = () => {
 
     const getRequests = async() => {
         try {
-            const res = await axios.get('http://localhost:4000/api/serviceP/getUserRequests',{
+            const res = await axios.get('https://s-provider-backend.onrender.com/api/serviceP/getUserRequests',{
                 headers:{
                   Authorization:`Bearer ${localStorage.getItem('token1')}`     
                 }
