@@ -11,7 +11,7 @@ const Login = () => {
     const dispatch = useDispatch();
     const onFinishHandler = async(values) => {
       try {
-        dispatch(showLoading());
+      
         const res = await axios.post('https://s-provider-backend.onrender.com/api/login',values);
         window.location.reload();
         dispatch(hideLoading());
@@ -24,7 +24,7 @@ const Login = () => {
             message.error(res.data.message);
         }
       } catch (error) {
-        dispatch(hideLoading());
+       
         console.log(error);
         message.error('Something went wrong');
       }
