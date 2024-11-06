@@ -12,7 +12,7 @@ const Register = () => {
      const onFinishHandler = async(values) => {
      console.log(values);
         try {
-            dispatch(showLoading());
+            
             const res = await axios.post('https://s-provider-backend.onrender.com/api/register',values);
             dispatch(hideLoading());
             if(res.data.success){
@@ -24,7 +24,7 @@ const Register = () => {
             }
             
         } catch (error) {
-            dispatch(hideLoading());
+         
             console.log(error);
             message.error('Something went wrong');
         }
